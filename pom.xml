@@ -4,6 +4,10 @@
   <groupId>com.amelinroman.spring.security</groupId>
   <artifactId>spring_mvc_security</artifactId>
   <packaging>war</packaging>
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+    </properties>
   <version>1.0-SNAPSHOT</version>
   <name>spring_mvc_security Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -42,6 +46,7 @@
       <version>6.1.1</version>
     </dependency>
 
+
     <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
     <dependency>
       <groupId>org.springframework.security</groupId>
@@ -57,11 +62,26 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.springframework.ldap/spring-ldap-core -->
+
+    <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
     <dependency>
-      <groupId>org.springframework.ldap</groupId>
-      <artifactId>spring-ldap-core</artifactId>
-      <version>3.1.0</version>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <version>8.0.33</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.5</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>6.0.11</version>
     </dependency>
 
 
